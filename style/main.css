@@ -1417,9 +1417,9 @@ header {
     max-width: 185px;
   }
   .hero-mobile {
-    bottom: -9px;
-    inset-inline-start: -90px;
-    width: 435px;
+    bottom: -3px;
+    inset-inline-start: -96px;
+    width: 446px;
   }
   .scroll-btn span {
     border-color: #000;
