@@ -879,7 +879,7 @@ ol.breadcrumb li span {
   justify-content: center;
   height: 54px;
   border-radius: 27px;
-  background-color: #070c17;
+  background-color: #000;
 }
 .download-links a img {
   width: 129px;
@@ -1010,7 +1010,7 @@ header {
   width: 75px;
 }
 .blur-fixed-header .big-menu li a {
-  color: #ba2322;
+  color: #000;
 }
 .blur-fixed-header .header-links a {
   background-color: #ba2322;
