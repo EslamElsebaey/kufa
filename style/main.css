@@ -1476,10 +1476,13 @@ header {
   .hero-mobile {
     bottom: -10px;
     inset-inline-start: -48px;
-    width: 352px;
+    width: 375px;
   }
   .banner-desc .main-title {
     font-size: 23px;
+  }
+  .banner-desc .second-title {
+    font-size: 20px;
   }
 }
 .client-reviews {
