@@ -1,0 +1,191 @@
+.download-app {
+  overflow: hidden;
+  background-color: #fff;
+  padding-top: 80px;
+  position: relative;
+}
+.download-bg {
+  background-color: $red-color;
+  height: 326px;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+  .container {
+    height: 100%;
+  }
+}
+.download-parent {
+  display: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 935px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  .cta-mob {
+    // height: 100%;
+    z-index: 3;
+    position: absolute;
+    // top: 15px;
+    bottom: 0;
+    inset-inline-end: 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline-end: auto;
+    .head {
+      font-size: 36px;
+      line-height: 50px;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    .para {
+      font-size: 24px;
+      color: #ffffff;
+      margin: 0;
+      font-weight: 400;
+      text-align: center;
+      max-width: 480px;
+    }
+  }
+}
+.download-links {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 35px;
+  a {
+    width: 185px;
+    transition: all ease-in-out 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    border-radius: 27px;
+    background-color: #070c17;
+    img {
+      width: 129px;
+    }
+  }
+}
+
+.download-app .download-links a:hover {
+  background-color: $yellow-color;
+}
+
+.download-pattern {
+  position: absolute;
+  z-index: 0;
+  width: 2158px;
+  inset-inline-start: 30px;
+  top: -42%;
+}
+
+@media screen and (max-width: 1800px) {
+  .download-pattern {
+    inset-inline-start: -4%;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .download-pattern {
+    inset-inline-start: -8%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .download-pattern {
+    inset-inline-start: -10%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .download-pattern {
+    inset-inline-start: -14%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .download-pattern {
+    inset-inline-start: -24%;
+    top: -40%;
+  }
+}
+
+@include max-1200 {
+  .download-parent {
+    width: 100%;
+  }
+  .download-pattern {
+    inset-inline-start: -25%;
+    width: 1900px;
+  }
+}
+
+@include max-992 {
+  .download-pattern {
+    display: none;
+  }
+  
+  .download-parent .cta-mob {
+    max-width: 280px;
+  }
+  .download-bg {
+    height: 280px;
+  }
+  .download-parent .content .para {
+    font-size: 19px;
+  }
+  .download-parent .content .head {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+
+@include max-768 {
+  .download-parent .content .para {
+    font-size: 22px;
+  }
+  .download-app {
+    margin-top: 0;
+  }
+  .download-parent {
+    flex-direction: column;
+    row-gap: 35px;
+  }
+  .download-bg {
+    height: auto;
+    padding-top: 50px;
+  }
+  .download-parent .content {
+    order: 1;
+    margin-inline-start: unset;
+    width: 100%;
+  }
+  .download-parent .cta-mob {
+    order: 2;
+    position: unset;
+    max-width: 250px;
+  }
+  .download-links a img {
+    height: 25px;
+    width: 129px;
+  }
+  .download-app .download-links a {
+    height: auto;
+    width: auto;
+    padding: 14px 28px;
+  }
+}
