@@ -15,11 +15,11 @@
   z-index: 1;
 }
 .hero-mobile {
-     position: absolute;
-    bottom: 0%;
-    z-index: 2;
-    inset-inline-start: 5%;
-    width: 850px;
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
+  inset-inline-start: 5%;
+  width: 850px;
 }
 .mainBanner-parent {
   direction: rtl;
@@ -236,5 +236,13 @@
   }
   .download-links a {
     height: 52px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .hero-mobile {
+    bottom: -10px;
+    inset-inline-start: -48px;
+    width: 352px;
   }
 }
